@@ -5,24 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class HitAction : MonoBehaviour
 {
+    public CameraShaking cameraShaking;
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     void OnTriggerEnter(Collider myCollider)
     {
         //Output the Collider's GameObject's name
         Debug.Log("Hitme");
+        cameraShaking.enabled = true;
+
         // SceneManager.LoadScene("AvatarTracking", LoadSceneMode.Additive);
+        
        
     }
 
