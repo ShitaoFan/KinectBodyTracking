@@ -95,7 +95,11 @@ public class AvatarController : MonoBehaviour
     {	
 		//GestureInfo = GameObject.Find("GestureInfo");
 		//HandCursor = GameObject.Find("HandCursor");
-		
+
+		//introduce Y offset
+		Vector3 YOffset = new Vector3(0.0f,0.98f,0.0f);
+		transform.Translate(YOffset);
+
 		// Holds our bones for later.
 		bones = new Transform[25];
 		
